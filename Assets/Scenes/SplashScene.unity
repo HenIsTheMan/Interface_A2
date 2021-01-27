@@ -568,6 +568,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 736112560081052952, guid: 18ee121d6d06fe247aa198df64bff466,
+        type: 3}
+      propertyPath: m_text
+      value: Tap anywhere to proceed...
+      objectReference: {fileID: 0}
     - target: {fileID: 6597505162374406625, guid: 18ee121d6d06fe247aa198df64bff466,
         type: 3}
       propertyPath: text
