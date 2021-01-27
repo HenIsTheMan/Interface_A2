@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace InterfaceA2{
+namespace InterfaceA2 {
     internal sealed class TitleAndLogoOffsetAnim: MonoBehaviour {
         #region Fields
 

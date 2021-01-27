@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace InterfaceA2{
+namespace InterfaceA2 {
     internal sealed class AudioTrigger: MonoBehaviour {
         #region Fields
 
@@ -27,7 +27,7 @@ namespace InterfaceA2{
 
         #endregion
 
-        public void OnButtonClick() {
+        public void PlayAudio() {
             audioSourceComponent.Play();
         }
     }

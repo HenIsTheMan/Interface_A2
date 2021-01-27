@@ -355,6 +355,16 @@ PrefabInstance:
       propertyPath: m_Colors.m_PressedColor.b
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6639455085741960620, guid: f8d65e1be71bcf74d95337f72974305b,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: PlayAudio
+      objectReference: {fileID: 0}
+    - target: {fileID: 6654413158478343707, guid: f8d65e1be71bcf74d95337f72974305b,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: PlayAudio
+      objectReference: {fileID: 0}
     - target: {fileID: 7165776130178926285, guid: f8d65e1be71bcf74d95337f72974305b,
         type: 3}
       propertyPath: posMultiplierX
