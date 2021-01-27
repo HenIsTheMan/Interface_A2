@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-namespace InterfaceA2{
+namespace InterfaceA2 {
     internal sealed class RedLine: MonoBehaviour {
         #region Fields
 
