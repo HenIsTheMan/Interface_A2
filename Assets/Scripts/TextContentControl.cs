@@ -6,7 +6,8 @@ namespace InterfaceA2 {
 
         private float BT;
         private float elapsedTime;
-        [SerializeField] private float delay;
+        [SerializeField] private float minDelay;
+        [SerializeField] private float maxDelay;
         [SerializeField] private string[] loadingTexts;
         private int loadingTextsLen;
 
@@ -20,7 +21,8 @@ namespace InterfaceA2 {
         public TextContentControl() {
             BT = 0.0f;
             elapsedTime = 0.0f;
-            delay = 0.0f;
+            minDelay = 0.0f;
+            maxDelay = 0.0f;
             loadingTexts = null;
             loadingTextsLen = 0;
         }
@@ -41,7 +43,7 @@ namespace InterfaceA2 {
                 for(int i = 0; i < loadingTextsLen; ++i) {
                 }
 
-                BT = elapsedTime + delay;
+                BT = elapsedTime + Random.Range(minDelay, maxDelay);
             }
         }
 
