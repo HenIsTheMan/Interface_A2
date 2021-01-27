@@ -7,8 +7,8 @@ namespace InterfaceA2 {
 
         private float elapsedTime;
         [SerializeField] private TextMeshProUGUI tmpComponent;
-        [SerializeField] private float startAlpha;
-        [SerializeField] private float endAlpha;
+        [SerializeField] private float startSize;
+        [SerializeField] private float endSize;
 
         #endregion
 
@@ -20,8 +20,8 @@ namespace InterfaceA2 {
         public TapTextAnim() {
             elapsedTime = 0.0f;
             tmpComponent = null;
-            startAlpha = 0.0f;
-            endAlpha = 0.0f;
+            startSize = 0.0f;
+            endSize = 0.0f;
         }
 
         #endregion
@@ -37,14 +37,14 @@ namespace InterfaceA2 {
         }
 
         private void FixedUpdate() {
-           float lerpFactor = EaseInQuint(Mathf.Cos(elapsedTime * 5.0f) * 0.5f + 0.5f);
-            tmpComponent.alpha = (1.0f - lerpFactor) * startAlpha + lerpFactor * endAlpha;
+           float lerpFactor = EaseInSine(Mathf.Cos(elapsedTime * 4.0f) * 0.5f + 0.5f);
+            tmpComponent.fontSize = (1.0f - lerpFactor) * startSize + lerpFactor * endSize;
         }
 
         #endregion
 
-        private float EaseInQuint(float x) {
-            return x * x * x * x * x;
+        private float EaseInSine(float x) {
+            return 1 - Mathf.Cos((x * Mathf.PI) * 0.5f);
         }
     }
 }
