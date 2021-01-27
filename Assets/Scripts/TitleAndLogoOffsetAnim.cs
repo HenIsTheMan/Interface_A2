@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 
 namespace InterfaceA2{
-    internal sealed class TitleOffsetAnim: MonoBehaviour {
+    internal sealed class TitleAndLogoOffsetAnim: MonoBehaviour {
         #region Fields
 
         private float elapsedTime;
@@ -16,7 +16,7 @@ namespace InterfaceA2{
 
         #region Ctors and Dtor
 
-        public TitleOffsetAnim() {
+        public TitleAndLogoOffsetAnim() {
             elapsedTime = 0.0f;
             offsetX = 0.0f;
             offsetY = 0.0f;

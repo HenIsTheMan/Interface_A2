@@ -9,6 +9,8 @@ namespace InterfaceA2 {
         [SerializeField] private TextMeshProUGUI tmpComponent;
         [SerializeField] private float startSize;
         [SerializeField] private float endSize;
+        [SerializeField] private float startAlpha;
+        [SerializeField] private float endAlpha;
 
         #endregion
 
@@ -22,6 +24,8 @@ namespace InterfaceA2 {
             tmpComponent = null;
             startSize = 0.0f;
             endSize = 0.0f;
+            startAlpha = 0.0f;
+            endAlpha = 0.0f;
         }
 
         #endregion
@@ -38,6 +42,7 @@ namespace InterfaceA2 {
 
         private void FixedUpdate() {
             float lerpFactor = EaseInSine(Mathf.Cos(elapsedTime * 4.0f) * 0.5f + 0.5f);
+            tmpComponent.alpha = (1.0f - lerpFactor) * startAlpha + lerpFactor * endAlpha;
             tmpComponent.fontSize = (1.0f - lerpFactor) * startSize + lerpFactor * endSize;
         }
 

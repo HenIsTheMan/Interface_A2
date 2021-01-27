@@ -201,7 +201,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 7165776129791164448}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &258597108
+--- !u!114 &258597112
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -524,6 +524,8 @@ MonoBehaviour:
   tmpComponent: {fileID: 2112661259}
   startSize: 30
   endSize: 25
+  startAlpha: 1
+  endAlpha: 0.7
 --- !u!1001 &7165776129791164448
 PrefabInstance:
   m_ObjectHideFlags: 0
