@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 
 namespace InterfaceA2 {
-    internal sealed class CustomizeImg: MonoBehaviour {
+    internal sealed class Customization0: MonoBehaviour {
         #region Fields
 
         [SerializeField] private float posMultiplierX;
@@ -16,7 +16,7 @@ namespace InterfaceA2 {
 
         #region Ctors and Dtor
 
-        public CustomizeImg() {
+        public Customization0() {
             posMultiplierX = 0.0f;
             posMultiplierY = 0.0f;
             scaleX = 1.0f;

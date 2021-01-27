@@ -2,7 +2,7 @@
 using TMPro;
 
 namespace InterfaceA2 {
-    internal sealed class CustomizeText: MonoBehaviour {
+    internal sealed class Customization1: MonoBehaviour {
         #region Fields
 
         [SerializeField] private TextMeshProUGUI tmpComponent;
@@ -17,7 +17,7 @@ namespace InterfaceA2 {
 
         #region Ctors and Dtor
 
-        public CustomizeText() {
+        public Customization1() {
             tmpComponent = null;
             text = string.Empty;
             posMultiplierX = 0.0f;
