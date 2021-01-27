@@ -37,7 +37,7 @@ namespace InterfaceA2 {
         }
 
         private void FixedUpdate() {
-           float lerpFactor = EaseInSine(Mathf.Cos(elapsedTime * 4.0f) * 0.5f + 0.5f);
+            float lerpFactor = EaseInSine(Mathf.Cos(elapsedTime * 4.0f) * 0.5f + 0.5f);
             tmpComponent.fontSize = (1.0f - lerpFactor) * startSize + lerpFactor * endSize;
         }
 
