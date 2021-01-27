@@ -88,7 +88,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   posMultiplierX: -0.3
-  posMultiplierY: 0.4
+  posMultiplierY: 0.42
   scaleX: 0.5
   scaleY: 0.5
 --- !u!1 &4209673899352617809
@@ -275,8 +275,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a464fde926e01074fa4abe1670015a40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minDelay: 2.1
-  maxDelay: 4
+  minDelay: 4
+  maxDelay: 5.5
   loadingTexts:
   - Loading characters
   - Loading vehicles
@@ -285,6 +285,7 @@ MonoBehaviour:
   - Loading images
   - Loading seagulls
   - Loading grass
+  ellipsesControlScript: {fileID: 5202102747456384836}
 --- !u!114 &5202102747456384836
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -537,7 +538,7 @@ PrefabInstance:
     - target: {fileID: 2172743360786444426, guid: 18ee121d6d06fe247aa198df64bff466,
         type: 3}
       propertyPath: posMultiplierX
-      value: -0.2
+      value: -0.3
       objectReference: {fileID: 0}
     - target: {fileID: 2172743360786444426, guid: 18ee121d6d06fe247aa198df64bff466,
         type: 3}

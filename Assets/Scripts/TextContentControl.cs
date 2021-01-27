@@ -11,6 +11,8 @@ namespace InterfaceA2 {
         [SerializeField] private string[] loadingTexts;
         private int loadingTextsLen;
 
+        [SerializeField] private EllipsesControl ellipsesControlScript;
+
         #endregion
 
         #region Properties
@@ -25,6 +27,8 @@ namespace InterfaceA2 {
             maxDelay = 0.0f;
             loadingTexts = null;
             loadingTextsLen = 0;
+
+            ellipsesControlScript = null;
         }
 
         #endregion
@@ -34,13 +38,18 @@ namespace InterfaceA2 {
         private void Awake() {
             UnityEngine.Assertions.Assert.IsNotNull(loadingTexts);
             loadingTextsLen = loadingTexts.Length;
+
+            UnityEngine.Assertions.Assert.IsNotNull(ellipsesControlScript);
         }
 
         private void Update() {
             elapsedTime += Time.deltaTime;
 
             if(BT <= elapsedTime) {
-                for(int i = 0; i < loadingTextsLen; ++i) {
+                int dotCount = ellipsesControlScript.DotCount;
+                ellipsesControlScript.TmpComponent.text = loadingTexts[Random.Range(0, loadingTextsLen - 1)];
+                for(int i = 0; i < dotCount; ++i) {
+                    ellipsesControlScript.TmpComponent.text += '.';
                 }
 
                 BT = elapsedTime + Random.Range(minDelay, maxDelay);

@@ -14,6 +14,19 @@ namespace InterfaceA2 {
         #endregion
 
         #region Properties
+
+        public int DotCount {
+            get {
+                return dotCount;
+            }
+        }
+
+        public TextMeshProUGUI TmpComponent {
+            get {
+                return tmpComponent;
+            }
+        }
+
         #endregion
 
         #region Ctors and Dtor
@@ -37,7 +50,7 @@ namespace InterfaceA2 {
         private void Update() {
             elapsedTime += Time.deltaTime;
 
-            if(BT <= elapsedTime) {
+            if(tmpComponent.text.Length > 0 && BT <= elapsedTime) {
                 while(tmpComponent.text.Substring(tmpComponent.text.Length - 1) == ".") {
                     tmpComponent.text = tmpComponent.text.Substring(0, tmpComponent.text.Length - 1);
                 }
