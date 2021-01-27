@@ -1,13 +1,11 @@
 ﻿using TMPro;
 using UnityEngine;
-using UnityEngine.EventSystems;
 
 namespace InterfaceA2 {
-    internal sealed class LangDropdown: MonoBehaviour, IPointerClickHandler, ICancelHandler {
+    internal sealed class LangDropdown: TMP_Dropdown {
         #region Fields
 
         [SerializeField] private AudioTrigger audioTriggerScript;
-        [SerializeField] private TMP_Dropdown dropdown;
 
         #endregion
 
@@ -18,34 +16,21 @@ namespace InterfaceA2 {
 
         public LangDropdown() {
             audioTriggerScript = null;
-            dropdown = null;
         }
 
         #endregion
 
         #region Unity User Callback Event Funcs
-
-        private void Awake() {
-            UnityEngine.Assertions.Assert.IsNotNull(audioTriggerScript);
-            UnityEngine.Assertions.Assert.IsNotNull(dropdown);
-        }
-
-        void Start() {
-            dropdown.onValueChanged.AddListener(delegate {
-                OnDropdownValChange(dropdown);
-            });
-        }
-
         #endregion
 
-        public void OnPointerClick(PointerEventData eventData) {
+        protected override GameObject CreateDropdownList(GameObject template) {
             audioTriggerScript.PlayAudio();
+            return base.CreateDropdownList(template);
         }
 
-        public void OnCancel(BaseEventData eventData) {
+        protected override void DestroyDropdownList(GameObject dropdownList) {
             audioTriggerScript.PlayAudio();
+            base.DestroyDropdownList(dropdownList);
         }
-
-        private void OnDropdownValChange(TMP_Dropdown dropdown) => audioTriggerScript.PlayAudio();
 	}
 }
