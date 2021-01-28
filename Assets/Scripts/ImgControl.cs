@@ -53,6 +53,11 @@ namespace InterfaceA2 {
             UnityEngine.Assertions.Assert.AreEqual(arrLen, blurredSprites.Length);
         }
 
+        private void Start() {
+            //imgBG.preserveAspect = false;
+            //imgFG.preserveAspect = false;
+        }
+
         private void Update() {
             elapsedTime += Time.deltaTime;
 
