@@ -1,11 +1,14 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 namespace InterfaceA2 {
     internal sealed class Customization2: MonoBehaviour {
         #region Fields
 
-        [SerializeField] private float posOffsetX;
-        [SerializeField] private float posOffsetY;
+        [SerializeField] private float posMultiplierX;
+        [SerializeField] private float posMultiplierY;
+        [SerializeField] private float gapMultiplierX;
+        [SerializeField] private float gapMultiplierY;
         [SerializeField] private float scaleX;
         [SerializeField] private float scaleY;
 
@@ -17,8 +20,10 @@ namespace InterfaceA2 {
         #region Ctors and Dtor
 
         public Customization2() {
-            posOffsetX = 0.0f;
-            posOffsetY = 0.0f;
+            posMultiplierX = 0.0f;
+            posMultiplierY = 0.0f;
+            gapMultiplierX = 0.0f;
+            gapMultiplierY = 0.0f;
             scaleX = 1.0f;
             scaleY = 1.0f;
         }
@@ -29,10 +34,12 @@ namespace InterfaceA2 {
 
         private void Start() {
             float aspectRatio = Screen.width / Screen.height;
+            Image imgComponent = GameObject.Find("ImgBlackTranslucentRect").GetComponent<Image>();
+            float gapX = imgComponent.sprite.rect.width;
+            float gapY = imgComponent.sprite.rect.height;
 
             RectTransform myRectTransform = (RectTransform)gameObject.transform;
-            RectTransform parentRectTransform = (RectTransform)gameObject.transform.parent;
-            myRectTransform.localPosition = new Vector3(parentRectTransform.localPosition.x + posOffsetX, parentRectTransform.localPosition.y + posOffsetY, 0.0f);
+            myRectTransform.localPosition = new Vector3(Screen.width * posMultiplierX + gapX * gapMultiplierX, Screen.height * posMultiplierY + gapY * gapMultiplierY, 0.0f);
             myRectTransform.localScale = new Vector3(
                 scaleX * aspectRatio,
                 scaleY * aspectRatio,
