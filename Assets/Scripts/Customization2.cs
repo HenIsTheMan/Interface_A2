@@ -34,10 +34,8 @@ namespace InterfaceA2 {
 
         private void Start() {
             float aspectRatio = Screen.width / Screen.height;
-            RectTransform parentRectTransform = (RectTransform)gameObject.transform.parent;
-            Image imgComponent = GameObject.Find("ImgBlackTranslucentRect").GetComponent<Image>();
-            float gapX = imgComponent.sprite.rect.width * parentRectTransform.localScale.x;
-            float gapY = imgComponent.sprite.rect.height * parentRectTransform.localScale.y;
+            float gapX = 1.0f / Screen.width;
+            float gapY = 1.0f / Screen.height;
 
             RectTransform myRectTransform = (RectTransform)gameObject.transform;
             myRectTransform.localPosition = new Vector3(Screen.width * posMultiplierX + gapX * gapMultiplierX, Screen.height * posMultiplierY + gapY * gapMultiplierY, 0.0f);
