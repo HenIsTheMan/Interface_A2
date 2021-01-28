@@ -255,6 +255,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 375387819612918218, guid: 18b2a3057ddaa05468ab45058abcc866,
         type: 2}
+    - target: {fileID: 736112560081052952, guid: 18ee121d6d06fe247aa198df64bff466,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 27
+      objectReference: {fileID: 0}
+    - target: {fileID: 736112560081052952, guid: 18ee121d6d06fe247aa198df64bff466,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 27
+      objectReference: {fileID: 0}
     - target: {fileID: 2172743360786444426, guid: 18ee121d6d06fe247aa198df64bff466,
         type: 3}
       propertyPath: posMultiplierY
@@ -264,6 +274,11 @@ PrefabInstance:
         type: 3}
       propertyPath: text
       value: when the countdown reaches 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2172743360786444426, guid: 18ee121d6d06fe247aa198df64bff466,
+        type: 3}
+      propertyPath: posMultiplierX
+      value: 0.04
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18ee121d6d06fe247aa198df64bff466, type: 3}
@@ -395,6 +410,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 375387819612918218, guid: 18b2a3057ddaa05468ab45058abcc866,
         type: 2}
+    - target: {fileID: 736112560081052952, guid: 18ee121d6d06fe247aa198df64bff466,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 27
+      objectReference: {fileID: 0}
+    - target: {fileID: 736112560081052952, guid: 18ee121d6d06fe247aa198df64bff466,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 27
+      objectReference: {fileID: 0}
     - target: {fileID: 2172743360786444426, guid: 18ee121d6d06fe247aa198df64bff466,
         type: 3}
       propertyPath: posMultiplierY
@@ -405,6 +430,11 @@ PrefabInstance:
       propertyPath: text
       value: 'Tip: Get a jump start by tapping anywhere'
       objectReference: {fileID: 0}
+    - target: {fileID: 2172743360786444426, guid: 18ee121d6d06fe247aa198df64bff466,
+        type: 3}
+      propertyPath: posMultiplierX
+      value: 0.04
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18ee121d6d06fe247aa198df64bff466, type: 3}
 --- !u!1001 &7030020499286335110
@@ -414,6 +444,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2307325671388697791, guid: edf04d7d2ae8b734c98bd1bc8e43f9b5,
+        type: 3}
+      propertyPath: posMultiplierX
+      value: -0.31
+      objectReference: {fileID: 0}
     - target: {fileID: 7030020499756514776, guid: edf04d7d2ae8b734c98bd1bc8e43f9b5,
         type: 3}
       propertyPath: m_LocalPosition.x
