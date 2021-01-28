@@ -164,6 +164,33 @@ MonoBehaviour:
   - 'Tip: If you overtake the driver in 2nd place,'
   - 'Tip: The wheels on the cars go round and round,'
   tmpComponent: {fileID: 854171007}
+--- !u!1 &999248809 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8903552271704563026, guid: edf04d7d2ae8b734c98bd1bc8e43f9b5,
+    type: 3}
+  m_PrefabInstance: {fileID: 7030020499286335110}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &999248810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 999248809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39ea68fd631ae094296e7daff5fdb318, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minDelay: 4
+  maxDelay: 7
+  imgBG: {fileID: 1346055521}
+  imgFG: {fileID: 1992450204}
+  sprites:
+  - {fileID: 21300000, guid: 0402e4a618e4f71429e38ab84b73e0a8, type: 3}
+  - {fileID: 21300000, guid: eb1f594dcacb6764fa78951bad7fe798, type: 3}
+  - {fileID: 21300000, guid: 12d08dc692e4eb24bb2023aea00f3c00, type: 3}
+  - {fileID: 21300000, guid: 0461d45359b455140b8478685bf1f48e, type: 3}
 --- !u!1 &1290299454 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 736112560081052950, guid: 18ee121d6d06fe247aa198df64bff466,
@@ -201,6 +228,30 @@ MonoBehaviour:
   - you become the driver in 2nd place
   - round and round, round and round
   tmpComponent: {fileID: 1290299457}
+--- !u!114 &1346055521 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8903552271955707152, guid: edf04d7d2ae8b734c98bd1bc8e43f9b5,
+    type: 3}
+  m_PrefabInstance: {fileID: 7030020499286335110}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1992450204 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7876980752061405324, guid: edf04d7d2ae8b734c98bd1bc8e43f9b5,
+    type: 3}
+  m_PrefabInstance: {fileID: 7030020499286335110}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1995576184
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -583,10 +634,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: LoadingScene
       objectReference: {fileID: 0}
+    - target: {fileID: 7876980752061405324, guid: edf04d7d2ae8b734c98bd1bc8e43f9b5,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 8700789064277477595, guid: edf04d7d2ae8b734c98bd1bc8e43f9b5,
         type: 3}
       propertyPath: m_HorizontalAlignment
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8903552271955707152, guid: edf04d7d2ae8b734c98bd1bc8e43f9b5,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: edf04d7d2ae8b734c98bd1bc8e43f9b5, type: 3}
