@@ -128,10 +128,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2522550924836034197, guid: f8d65e1be71bcf74d95337f72974305b,
+    - target: {fileID: 5127176196716874179, guid: f8d65e1be71bcf74d95337f72974305b,
         type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 30
+      propertyPath: posOffsetX
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7165776130620565009, guid: f8d65e1be71bcf74d95337f72974305b,
         type: 3}
