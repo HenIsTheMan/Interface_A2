@@ -51,9 +51,13 @@ namespace InterfaceA2 {
         }
 
         private void LateUpdate() {
+            tmpComponent.alpha = 1.0f;
+
             if(BT <= elapsedTime) {
                 tmpComponent.text = tipTexts[randIndex];
                 BT = elapsedTime + delay;
+            } else if(BT - elapsedTime >= 0.0f && BT - elapsedTime <= 1.0f) {
+                tmpComponent.alpha = BT - elapsedTime;
             }
         }
 
