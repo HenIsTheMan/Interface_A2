@@ -1155,7 +1155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89994b276d4de7d40a756a51b673e7ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  posMultiplierX: -0.34
+  posMultiplierX: -0.38
   posMultiplierY: 0.315
   scaleX: 1
   scaleY: 1
@@ -2429,7 +2429,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89994b276d4de7d40a756a51b673e7ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  posMultiplierX: 0.015
+  posMultiplierX: 0
   posMultiplierY: 0.28
   scaleX: 2.4
   scaleY: 2.4
@@ -2684,7 +2684,7 @@ PrefabInstance:
     - target: {fileID: 4997590236096105535, guid: e16d3e9dad39b6a408e4465dbca565ec,
         type: 3}
       propertyPath: posMultiplierX
-      value: 0.028
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 5857794695743019426, guid: e16d3e9dad39b6a408e4465dbca565ec,
         type: 3}
@@ -2829,7 +2829,7 @@ PrefabInstance:
     - target: {fileID: 4997590236096105535, guid: e16d3e9dad39b6a408e4465dbca565ec,
         type: 3}
       propertyPath: posMultiplierX
-      value: 0.018
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5857794695743019426, guid: e16d3e9dad39b6a408e4465dbca565ec,
         type: 3}
@@ -3095,7 +3095,7 @@ PrefabInstance:
     - target: {fileID: 2172743360786444426, guid: 18ee121d6d06fe247aa198df64bff466,
         type: 3}
       propertyPath: text
-      value: V 4.0.1
+      value: 'Ver: 4.0.1'
       objectReference: {fileID: 0}
     - target: {fileID: 2172743360786444426, guid: 18ee121d6d06fe247aa198df64bff466,
         type: 3}
@@ -3255,7 +3255,7 @@ PrefabInstance:
     - target: {fileID: 2172743360786444426, guid: 18ee121d6d06fe247aa198df64bff466,
         type: 3}
       propertyPath: posMultiplierX
-      value: -0.34
+      value: -0.38
       objectReference: {fileID: 0}
     - target: {fileID: 2172743360786444426, guid: 18ee121d6d06fe247aa198df64bff466,
         type: 3}
@@ -3420,7 +3420,7 @@ PrefabInstance:
     - target: {fileID: 2172743360786444426, guid: 18ee121d6d06fe247aa198df64bff466,
         type: 3}
       propertyPath: posMultiplierX
-      value: 0.015
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6597505162374406625, guid: 18ee121d6d06fe247aa198df64bff466,
         type: 3}
