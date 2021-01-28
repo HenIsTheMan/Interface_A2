@@ -11,9 +11,8 @@ GameObject:
   - component: {fileID: 5857794695743019426}
   - component: {fileID: 5857794695743019436}
   - component: {fileID: 5857794695743019437}
-  - component: {fileID: 4997590236096105535}
   m_Layer: 5
-  m_Name: SplashTextYellowRed
+  m_Name: TextYellowRed
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -135,19 +134,3 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &4997590236096105535
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5857794695743019427}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60421437cd4d2894d8c944a7a93eb9ad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tmpComponent: {fileID: 5857794695743019437}
-  text: 
-  posMultiplierX: 0
-  posMultiplierY: 0
