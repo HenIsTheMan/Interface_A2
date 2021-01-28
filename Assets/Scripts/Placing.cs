@@ -38,10 +38,19 @@ namespace InterfaceA2 {
         private void Start() {
             for(int i = 0; i < arrLen; ++i) {
                 Vector3 pos = ((RectTransform)grayBars[i].transform).localPosition;
-                GameObject placingTextGO = Instantiate(placingTextPrefab, new Vector3(pos.x + 13.5f, pos.y, 0), Quaternion.identity);
+
+                Vector3 endPos = new Vector3(pos.x + 13.5f, pos.y, 0);
+                Vector3 startPos = endPos + new Vector3(30.0f, 0.0f, 0.0f);
+
+                GameObject placingTextGO = Instantiate(placingTextPrefab, startPos, Quaternion.identity);
                 placingTextGO.transform.SetParent(gameObject.transform, false);
                 placingTextGO.name = "PlacingText" + i;
                 placingTextGO.GetComponent<TextMeshProUGUI>().text = texts[i];
+
+                PlacingTextAnim myAnim = placingTextGO.GetComponent<PlacingTextAnim>();
+                myAnim.AnimDuration = 1.0f;
+                myAnim.StartPosX = startPos.x;
+                myAnim.EndPosX = endPos.x;
             }
         }
 

@@ -49,7 +49,7 @@ namespace InterfaceA2 {
         #endregion
 
         private float EaseInSine(float x) {
-            return 1 - Mathf.Cos((x * Mathf.PI) * 0.5f);
+            return 1.0f - Mathf.Cos((x * Mathf.PI) * 0.5f);
         }
     }
 }
