@@ -2,7 +2,7 @@
 using UnityEngine.UI;
 
 namespace InterfaceA2 {
-    internal sealed class ImgControl: MonoBehaviour { //Not used anymore
+    internal sealed class ImgControlBG: MonoBehaviour {
         #region Fields
 
         private float BT;
@@ -10,10 +10,7 @@ namespace InterfaceA2 {
         [SerializeField] private float minDelay;
         [SerializeField] private float maxDelay;
         [SerializeField] private Image imgBG;
-        [SerializeField] private Image imgFG;
-
         [SerializeField] private Sprite[] sprites;
-        [SerializeField] private Sprite[] blurredSprites;
         private int arrLen;
         private int currIndex;
 
@@ -24,16 +21,13 @@ namespace InterfaceA2 {
 
         #region Ctors and Dtor
 
-        public ImgControl() {
+        public ImgControlBG() {
             BT = 0.0f;
             elapsedTime = 0.0f;
             minDelay = 0.0f;
             maxDelay = 0.0f;
             imgBG = null;
-            imgFG = null;
-
             sprites = null;
-            blurredSprites = null;
             arrLen = 0;
             currIndex = 0;
         }
@@ -44,18 +38,8 @@ namespace InterfaceA2 {
 
         private void Awake() {
             UnityEngine.Assertions.Assert.IsNotNull(imgBG);
-            UnityEngine.Assertions.Assert.IsNotNull(imgFG);
-
             UnityEngine.Assertions.Assert.IsNotNull(sprites);
-            UnityEngine.Assertions.Assert.IsNotNull(blurredSprites);
-
             arrLen = sprites.Length;
-            UnityEngine.Assertions.Assert.AreEqual(arrLen, blurredSprites.Length);
-        }
-
-        private void Start() {
-            imgBG.preserveAspect = false;
-            imgFG.preserveAspect = false;
         }
 
         private void Update() {
@@ -68,8 +52,7 @@ namespace InterfaceA2 {
 
         private void LateUpdate() {
             if(BT <= elapsedTime) {
-                imgBG.sprite = blurredSprites[currIndex];
-                imgFG.sprite = sprites[currIndex];
+                imgBG.sprite = sprites[currIndex];
 
                 BT = elapsedTime + Random.Range(minDelay, maxDelay);
             }

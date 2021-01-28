@@ -128,81 +128,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2522233781853270793, guid: edf04d7d2ae8b734c98bd1bc8e43f9b5,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5454871115958802652, guid: edf04d7d2ae8b734c98bd1bc8e43f9b5,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5454871115958802652, guid: edf04d7d2ae8b734c98bd1bc8e43f9b5,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5454871115958802652, guid: edf04d7d2ae8b734c98bd1bc8e43f9b5,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5454871115958802652, guid: edf04d7d2ae8b734c98bd1bc8e43f9b5,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5454871115958802652, guid: edf04d7d2ae8b734c98bd1bc8e43f9b5,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5454871115958802652, guid: edf04d7d2ae8b734c98bd1bc8e43f9b5,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5454871115958802652, guid: edf04d7d2ae8b734c98bd1bc8e43f9b5,
-        type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5454871115958802652, guid: edf04d7d2ae8b734c98bd1bc8e43f9b5,
-        type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5454871115958802652, guid: edf04d7d2ae8b734c98bd1bc8e43f9b5,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5454871115958802652, guid: edf04d7d2ae8b734c98bd1bc8e43f9b5,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5454871115958802652, guid: edf04d7d2ae8b734c98bd1bc8e43f9b5,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5454871115958802652, guid: edf04d7d2ae8b734c98bd1bc8e43f9b5,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 400
-      objectReference: {fileID: 0}
-    - target: {fileID: 5454871115958802652, guid: edf04d7d2ae8b734c98bd1bc8e43f9b5,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5454871115958802652, guid: edf04d7d2ae8b734c98bd1bc8e43f9b5,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7030020499756514776, guid: edf04d7d2ae8b734c98bd1bc8e43f9b5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -262,26 +187,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LoadingScene
-      objectReference: {fileID: 0}
-    - target: {fileID: 7762116809562171624, guid: edf04d7d2ae8b734c98bd1bc8e43f9b5,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7762116809720360722, guid: edf04d7d2ae8b734c98bd1bc8e43f9b5,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8700789064277477589, guid: edf04d7d2ae8b734c98bd1bc8e43f9b5,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8903552272163976775, guid: edf04d7d2ae8b734c98bd1bc8e43f9b5,
-        type: 3}
-      propertyPath: m_Name
-      value: Fake
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: edf04d7d2ae8b734c98bd1bc8e43f9b5, type: 3}
