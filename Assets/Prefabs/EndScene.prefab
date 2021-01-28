@@ -160,6 +160,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 158b04bf0a3eb644685dae2466d57eaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  delay: 0.7
   placingTextPrefab: {fileID: 6467083068407184753, guid: 4058a9af3cc4bce4b92f8ff340bf2f0d,
     type: 3}
   grayBars:

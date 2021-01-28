@@ -5,10 +5,14 @@ namespace InterfaceA2 {
     internal sealed class Placing: MonoBehaviour {
         #region Fields
 
+        private float BT;
+        private float elapsedTime;
+        [SerializeField] private float delay;
         [SerializeField] private GameObject placingTextPrefab;
         [SerializeField] private GameObject[] grayBars;
         [SerializeField] private string[] texts;
-        int arrLen;
+        private int arrLen;
+        private int i;
 
         #endregion
 
@@ -18,10 +22,14 @@ namespace InterfaceA2 {
         #region Ctors and Dtor
 
         public Placing() {
+            BT = 0.0f;
+            elapsedTime = 0.0f;
+            delay = 0.0f;
             placingTextPrefab = null;
             grayBars = null;
             texts = null;
             arrLen = 0;
+            i = 0;
         }
 
         #endregion
@@ -35,8 +43,10 @@ namespace InterfaceA2 {
             UnityEngine.Assertions.Assert.AreEqual(arrLen, texts.Length);
         }
 
-        private void Start() {
-            for(int i = 0; i < arrLen; ++i) {
+        private void Update() {
+            elapsedTime += Time.deltaTime;
+
+            if(i < arrLen && BT <= elapsedTime) {
                 Vector3 pos = ((RectTransform)grayBars[i].transform).localPosition;
 
                 Vector3 endPos = new Vector3(pos.x + 13.5f, pos.y, 0);
@@ -51,6 +61,9 @@ namespace InterfaceA2 {
                 myAnim.AnimDuration = 1.0f;
                 myAnim.StartPosX = startPos.x;
                 myAnim.EndPosX = endPos.x;
+
+                ++i;
+                BT = elapsedTime + delay;
             }
         }
 
