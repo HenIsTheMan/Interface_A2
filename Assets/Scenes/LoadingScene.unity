@@ -127,6 +127,80 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 7030020499286335110}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &854171004 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 736112560081052950, guid: 18ee121d6d06fe247aa198df64bff466,
+    type: 3}
+  m_PrefabInstance: {fileID: 2038486146}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &854171007 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 736112560081052952, guid: 18ee121d6d06fe247aa198df64bff466,
+    type: 3}
+  m_PrefabInstance: {fileID: 2038486146}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 854171004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &854171009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 854171004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5e1383c47727aa41927a14cba1c15b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 7
+  tipTexts:
+  - 'Tip: Get a jump start by tapping anywhere'
+  - 'Tip: Collect question spheres to'
+  - 'Tip: If you overtake the driver in 2nd place,'
+  - 'Tip: The wheels on the cars go round and round,'
+  tmpComponent: {fileID: 854171007}
+--- !u!1 &1290299454 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 736112560081052950, guid: 18ee121d6d06fe247aa198df64bff466,
+    type: 3}
+  m_PrefabInstance: {fileID: 1995576184}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1290299457 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 736112560081052952, guid: 18ee121d6d06fe247aa198df64bff466,
+    type: 3}
+  m_PrefabInstance: {fileID: 1995576184}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1290299454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1290299459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1290299454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5e1383c47727aa41927a14cba1c15b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 7
+  tipTexts:
+  - when the countdown reaches 0
+  - gain powers and destroy your enemies!
+  - you become the driver in 2nd place
+  - round and round, round and round
+  tmpComponent: {fileID: 1290299457}
 --- !u!1001 &1995576184
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -273,7 +347,7 @@ PrefabInstance:
     - target: {fileID: 2172743360786444426, guid: 18ee121d6d06fe247aa198df64bff466,
         type: 3}
       propertyPath: text
-      value: when the countdown reaches 0
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 2172743360786444426, guid: 18ee121d6d06fe247aa198df64bff466,
         type: 3}
@@ -428,7 +502,7 @@ PrefabInstance:
     - target: {fileID: 2172743360786444426, guid: 18ee121d6d06fe247aa198df64bff466,
         type: 3}
       propertyPath: text
-      value: 'Tip: Get a jump start by tapping anywhere'
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 2172743360786444426, guid: 18ee121d6d06fe247aa198df64bff466,
         type: 3}

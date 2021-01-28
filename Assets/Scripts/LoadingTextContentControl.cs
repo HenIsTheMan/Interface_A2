@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 
 namespace InterfaceA2 {
-    internal sealed class TextContentControl: MonoBehaviour {
+    internal sealed class LoadingTextContentControl: MonoBehaviour {
         #region Fields
 
         private float BT;
@@ -20,7 +20,7 @@ namespace InterfaceA2 {
 
         #region Ctors and Dtor
 
-        public TextContentControl() {
+        public LoadingTextContentControl() {
             BT = 0.0f;
             elapsedTime = 0.0f;
             minDelay = 0.0f;
