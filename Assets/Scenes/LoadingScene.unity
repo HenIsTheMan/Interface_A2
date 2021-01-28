@@ -521,7 +521,7 @@ PrefabInstance:
     - target: {fileID: 2307325671388697791, guid: edf04d7d2ae8b734c98bd1bc8e43f9b5,
         type: 3}
       propertyPath: posMultiplierX
-      value: -0.31
+      value: -0.35
       objectReference: {fileID: 0}
     - target: {fileID: 7030020499756514776, guid: edf04d7d2ae8b734c98bd1bc8e43f9b5,
         type: 3}
