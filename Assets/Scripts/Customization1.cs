@@ -36,6 +36,11 @@ namespace InterfaceA2 {
             tmpComponent.text = text;
 
             tmpComponent.rectTransform.localPosition = new Vector3(Screen.width * posMultiplierX, Screen.height * posMultiplierY, 0.0f);
+            tmpComponent.rectTransform.localScale = new Vector3(
+                tmpComponent.rectTransform.localScale.x * Screen.width / 800.0f,
+                tmpComponent.rectTransform.localScale.y * Screen.height / 600.0f,
+                1.0f
+            );
         }
 
         #endregion
