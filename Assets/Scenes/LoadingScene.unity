@@ -474,5 +474,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LoadingScene
       objectReference: {fileID: 0}
+    - target: {fileID: 8700789064277477595, guid: edf04d7d2ae8b734c98bd1bc8e43f9b5,
+        type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: edf04d7d2ae8b734c98bd1bc8e43f9b5, type: 3}
