@@ -28,9 +28,15 @@ namespace InterfaceA2 {
         #region Unity User Callback Event Funcs
 
         private void Start() {
+            float aspectRatio = Screen.width / Screen.height;
+
             RectTransform myRectTransform = (RectTransform)gameObject.transform;
             myRectTransform.localPosition = new Vector3(Screen.width * posMultiplierX, Screen.height * posMultiplierY, 0.0f);
-            myRectTransform.localScale = new Vector3(scaleX * Screen.width / 800.0f, scaleY * Screen.height / 600.0f, 1.0f);
+            myRectTransform.localScale = new Vector3(
+                scaleX * aspectRatio,
+                scaleY * aspectRatio,
+                1.0f
+            );
         }
 
         #endregion
