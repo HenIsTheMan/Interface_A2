@@ -38,7 +38,7 @@ namespace InterfaceA2 {
         private void Start() {
             for(int i = 0; i < arrLen; ++i) {
                 Vector3 pos = ((RectTransform)grayBars[i].transform).localPosition;
-                GameObject placingTextGO = Instantiate(placingTextPrefab, new Vector3(pos.x + 15.0f, pos.y, 0), Quaternion.identity);
+                GameObject placingTextGO = Instantiate(placingTextPrefab, new Vector3(pos.x + 13.5f, pos.y, 0), Quaternion.identity);
                 placingTextGO.transform.SetParent(gameObject.transform, false);
                 placingTextGO.name = "PlacingText" + i;
                 placingTextGO.GetComponent<TextMeshProUGUI>().text = texts[i];
