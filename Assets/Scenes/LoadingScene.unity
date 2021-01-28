@@ -128,6 +128,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 997918360, guid: edf04d7d2ae8b734c98bd1bc8e43f9b5, type: 3}
+      propertyPath: chanceForShortDelay
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 997918360, guid: edf04d7d2ae8b734c98bd1bc8e43f9b5, type: 3}
+      propertyPath: maxLongDelay
+      value: 1.8
+      objectReference: {fileID: 0}
     - target: {fileID: 7030020499756514776, guid: edf04d7d2ae8b734c98bd1bc8e43f9b5,
         type: 3}
       propertyPath: m_LocalPosition.x

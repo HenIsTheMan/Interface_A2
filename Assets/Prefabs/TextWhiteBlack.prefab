@@ -11,9 +11,8 @@ GameObject:
   - component: {fileID: 736112560081052951}
   - component: {fileID: 736112560081052953}
   - component: {fileID: 736112560081052952}
-  - component: {fileID: 2172743360786444426}
   m_Layer: 5
-  m_Name: SplashText
+  m_Name: TextWhiteBlack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -68,7 +67,7 @@ MonoBehaviour:
   m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 18b2a3057ddaa05468ab45058abcc866, type: 2}
-  m_sharedMaterial: {fileID: 375387819612918218, guid: e3a339633e22db046bb125fb7f48f5fc,
+  m_sharedMaterial: {fileID: 375387819612918218, guid: 18b2a3057ddaa05468ab45058abcc866,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -135,19 +134,3 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &2172743360786444426
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 736112560081052950}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60421437cd4d2894d8c944a7a93eb9ad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tmpComponent: {fileID: 736112560081052952}
-  text: 
-  posMultiplierX: 0
-  posMultiplierY: 0
