@@ -18,6 +18,13 @@ namespace InterfaceA2 {
         #endregion
 
         #region Properties
+
+        public int Percentage {
+            get {
+                return percentage;
+            }
+        }
+
         #endregion
 
         #region Ctors and Dtor
