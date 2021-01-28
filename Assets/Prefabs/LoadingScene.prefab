@@ -376,6 +376,11 @@ MonoBehaviour:
   - {fileID: 21300000, guid: eb1f594dcacb6764fa78951bad7fe798, type: 3}
   - {fileID: 21300000, guid: 12d08dc692e4eb24bb2023aea00f3c00, type: 3}
   - {fileID: 21300000, guid: 0461d45359b455140b8478685bf1f48e, type: 3}
+  blurredSprites:
+  - {fileID: 21300000, guid: 98f71c51cea527b4a98e0ab175255e46, type: 3}
+  - {fileID: 21300000, guid: 546caf47fa7002043b6b9540e48162f4, type: 3}
+  - {fileID: 21300000, guid: ee927fe4782eb934a9fa9492979caeac, type: 3}
+  - {fileID: 21300000, guid: 214fe495c3d7eb74196dbb762c101d5c, type: 3}
 --- !u!1001 &7030020498692767409
 PrefabInstance:
   m_ObjectHideFlags: 0
