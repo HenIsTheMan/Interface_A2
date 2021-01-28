@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 8764590450569284554}
   - component: {fileID: 1878741938112006559}
   - component: {fileID: 6639455085741960620}
-  - component: {fileID: 1178926683213956983}
   - component: {fileID: 415413864176646060}
   - component: {fileID: 1312457265949900003}
   - component: {fileID: 7264189499020486398}
@@ -146,22 +145,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1178926683213956983
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 51289165682139831}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89994b276d4de7d40a756a51b673e7ce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  posMultiplierX: 0.42
-  posMultiplierY: -0.42
-  scaleX: 0.35
-  scaleY: 0.35
 --- !u!114 &415413864176646060
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1526,7 +1509,6 @@ GameObject:
   - component: {fileID: 3062861081400695745}
   - component: {fileID: 5728455752465909720}
   - component: {fileID: 6654413158478343707}
-  - component: {fileID: 6954722128775188962}
   - component: {fileID: 4085108936696406100}
   - component: {fileID: 7008443114039660202}
   - component: {fileID: 8186119287839780089}
@@ -1660,22 +1642,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &6954722128775188962
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3929105596400972350}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89994b276d4de7d40a756a51b673e7ce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  posMultiplierX: 0.32
-  posMultiplierY: -0.42
-  scaleX: 0.35
-  scaleY: 0.35
 --- !u!114 &4085108936696406100
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3427,7 +3393,8 @@ PrefabInstance:
       propertyPath: text
       value: Tap anywhere to proceed...
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2172743360786444426, guid: 18ee121d6d06fe247aa198df64bff466, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 18ee121d6d06fe247aa198df64bff466, type: 3}
 --- !u!114 &7165776130489173688 stripped
 MonoBehaviour:
