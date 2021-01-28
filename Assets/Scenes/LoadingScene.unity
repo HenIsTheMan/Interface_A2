@@ -188,5 +188,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LoadingScene
       objectReference: {fileID: 0}
+    - target: {fileID: 8903552272163976775, guid: edf04d7d2ae8b734c98bd1bc8e43f9b5,
+        type: 3}
+      propertyPath: m_Name
+      value: Fake
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: edf04d7d2ae8b734c98bd1bc8e43f9b5, type: 3}
