@@ -170,10 +170,10 @@ MonoBehaviour:
   - {fileID: 539316581981508194}
   texts:
   - 1st    Max    00:40:39
-  - 
-  - 
-  - 
-  - 
+  - 2nd    Feliks    00:41:38
+  - 3rd    Esteban    00:51:28
+  - 4th    Henry    00:54:41
+  - 5th    Foobar    01:00:31
 --- !u!1 &3830840573429416279
 GameObject:
   m_ObjectHideFlags: 0

@@ -128,26 +128,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1762381228343586737, guid: be40b96731bc34a41b175308e9a92c5f,
-        type: 3}
-      propertyPath: texts.Array.data[1]
-      value: 2nd    Feliks    00:41:38
-      objectReference: {fileID: 0}
-    - target: {fileID: 1762381228343586737, guid: be40b96731bc34a41b175308e9a92c5f,
-        type: 3}
-      propertyPath: texts.Array.data[2]
-      value: 3rd    Esteban    00:51:28
-      objectReference: {fileID: 0}
-    - target: {fileID: 1762381228343586737, guid: be40b96731bc34a41b175308e9a92c5f,
-        type: 3}
-      propertyPath: texts.Array.data[3]
-      value: 4th    Henry    00:54:41
-      objectReference: {fileID: 0}
-    - target: {fileID: 1762381228343586737, guid: be40b96731bc34a41b175308e9a92c5f,
-        type: 3}
-      propertyPath: texts.Array.data[4]
-      value: 5th    Foobar    01:00:31
-      objectReference: {fileID: 0}
     - target: {fileID: 4474290013223126424, guid: be40b96731bc34a41b175308e9a92c5f,
         type: 3}
       propertyPath: m_LocalPosition.x

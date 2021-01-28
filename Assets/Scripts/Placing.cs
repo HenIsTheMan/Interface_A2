@@ -40,7 +40,7 @@ namespace InterfaceA2 {
                 Vector3 pos = ((RectTransform)grayBars[i].transform).localPosition;
 
                 Vector3 endPos = new Vector3(pos.x + 13.5f, pos.y, 0);
-                Vector3 startPos = endPos + new Vector3(30.0f, 0.0f, 0.0f);
+                Vector3 startPos = endPos + new Vector3(200.0f, 0.0f, 0.0f);
 
                 GameObject placingTextGO = Instantiate(placingTextPrefab, startPos, Quaternion.identity);
                 placingTextGO.transform.SetParent(gameObject.transform, false);

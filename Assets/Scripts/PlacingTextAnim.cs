@@ -41,7 +41,7 @@ namespace InterfaceA2 {
             timeAlive += Time.deltaTime;
 
             if(timeAlive <= AnimDuration) {
-                float lerpFactor = EaseInSine(Mathf.Cos(timeAlive) * 0.5f + 0.5f);
+                float lerpFactor = EaseInExpo(timeAlive);
                 Vector3 localPos = ((RectTransform)gameObject.transform).localPosition;
                 ((RectTransform)gameObject.transform).localPosition = new Vector3((1.0f - lerpFactor) * StartPosX + lerpFactor * EndPosX, localPos.y, localPos.z);
             }
@@ -49,8 +49,8 @@ namespace InterfaceA2 {
 
         #endregion
 
-        private float EaseInSine(float x) {
-            return 1.0f - Mathf.Cos((x * Mathf.PI) * 0.5f);
+        private float EaseInExpo(float x) {
+            return Mathf.Approximately(x, 0.0f) ? 0.0f : Mathf.Pow(2.0f, 10.0f * x - 10.0f);
         }
     }
 }
