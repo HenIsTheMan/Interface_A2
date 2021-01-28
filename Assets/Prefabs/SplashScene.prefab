@@ -678,7 +678,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   posMultiplierX: -0.35
   posMultiplierY: -0.42
-  gapMultiplierX: -0.17
+  gapMultiplierX: -0.8
   gapMultiplierY: 0
   scaleX: 0.6
   scaleY: 0.6
@@ -866,7 +866,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   posMultiplierX: -0.35
   posMultiplierY: -0.42
-  gapMultiplierX: 0.19
+  gapMultiplierX: 0.9
   gapMultiplierY: 0
   scaleX: 0.6
   scaleY: 0.6
