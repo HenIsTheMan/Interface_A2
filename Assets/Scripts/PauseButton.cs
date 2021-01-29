@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 
 namespace InterfaceA2 {
-    internal sealed class PauseButtonScript: MonoBehaviour {
+    internal sealed class PauseButton: MonoBehaviour {
         #region Fields
 
         [SerializeField] private GameObject WIP;
@@ -13,7 +13,7 @@ namespace InterfaceA2 {
 
         #region Ctors and Dtor
 
-        public PauseButtonScript() {
+        public PauseButton() {
             WIP = null;
         }
 

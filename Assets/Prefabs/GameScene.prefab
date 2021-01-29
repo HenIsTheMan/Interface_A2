@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 51509452}
   - component: {fileID: 51509451}
   - component: {fileID: 51509454}
+  - component: {fileID: 886895114505187656}
   m_Layer: 5
   m_Name: CrossButton
   m_TagString: Untagged
@@ -130,6 +131,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 886895114505187656}
+        m_MethodName: PlayAudio
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &51509454
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -142,6 +154,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90ffdd25bb2686c4a8989955a773c082, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &886895114505187656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 51509449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb4f467520a38c34ea97b8c13c67c61a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSrcComponent: {fileID: 367199757124289261}
 --- !u!1 &493931534
 GameObject:
   m_ObjectHideFlags: 0
@@ -1912,6 +1937,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb4f467520a38c34ea97b8c13c67c61a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!82 &367199757124289261 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 663381382598002436, guid: 83ad146c16458ac4db5ec63f12ba1bf7,
+    type: 3}
+  m_PrefabInstance: {fileID: 877150663247414761}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &367199757124289248 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 663381382598002441, guid: 83ad146c16458ac4db5ec63f12ba1bf7,
