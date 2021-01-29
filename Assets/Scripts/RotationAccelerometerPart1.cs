@@ -32,7 +32,7 @@ namespace InterfaceA2 {
         }
 
         private void Update() {
-            float lerpFactor = (float)loadingPercentageScript.Percentage / 100.0f;
+            float lerpFactor = loadingPercentageScript.Percentage / 100.0f;
             myRectTransform.eulerAngles = new Vector3(0.0f, 0.0f, (1.0f - lerpFactor) * startAngle + lerpFactor * endAngle);
         }
 

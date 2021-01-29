@@ -19,6 +19,9 @@ namespace InterfaceA2 {
 
         [SerializeField] private AudioSource audioSrcComponent;
 
+        [SerializeField] private GameObject[] wheels;
+        private CarTireRotation[] wheelRotations;
+
         #endregion
 
         #region Properties
@@ -38,6 +41,9 @@ namespace InterfaceA2 {
             spdBarParts = null;
 
             audioSrcComponent = null;
+
+            wheels = null;
+            wheelRotations = null;
         }
 
         #endregion
@@ -50,6 +56,14 @@ namespace InterfaceA2 {
             UnityEngine.Assertions.Assert.IsNotNull(spdTmpComponent);
 
             UnityEngine.Assertions.Assert.IsNotNull(audioSrcComponent);
+
+            UnityEngine.Assertions.Assert.IsNotNull(wheels);
+            int wheelsLen = wheels.Length;
+
+            wheelRotations = new CarTireRotation[wheelsLen];
+            for(int i = 0; i < wheelsLen; ++i) {
+                wheelRotations[i] = wheels[i].GetComponent<CarTireRotation>();
+            }
         }
 
         private void Start() {
@@ -103,6 +117,11 @@ namespace InterfaceA2 {
             audioSrcComponent.pitch = 1.0f + vel / maxVel * 0.4f;
             if(Mathf.Approximately(vel, 0.0f)) {
                 audioSrcComponent.Stop();
+            }
+
+            int wheelRotationsLen = wheelRotations.Length;
+            for(int i = 0; i < wheelRotationsLen; ++i) {
+                wheelRotations[i].AngleChange = (~i & 1) == 1 ? vel * 16.0f : -vel * 16.0f;
             }
         }
 
