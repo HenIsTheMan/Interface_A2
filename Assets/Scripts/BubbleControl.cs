@@ -5,9 +5,11 @@ namespace InterfaceA2 {
     internal sealed class BubbleControl: MonoBehaviour {
         #region Fields
 
-        private float timeBeforeSpawning;
-        [SerializeField] private float maxTimeBeforeSpawning;
+        private float timeBeforeShowing;
+        [SerializeField] private float maxTimeBeforeShowing;
+        [SerializeField] private GameObject missilePrefab;
         [SerializeField] private Image missileImg;
+        [SerializeField] private Vector3 missileStartPos;
 
         #endregion
 
@@ -17,8 +19,9 @@ namespace InterfaceA2 {
         #region Ctors and Dtor
 
         public BubbleControl() {
-            timeBeforeSpawning = 0.0f;
-            maxTimeBeforeSpawning = 0.0f;
+            timeBeforeShowing = 0.0f;
+            maxTimeBeforeShowing = 0.0f;
+            missilePrefab = null;
             missileImg = null;
         }
 
@@ -27,12 +30,13 @@ namespace InterfaceA2 {
         #region Unity User Callback Event Funcs
 
         private void Awake() {
+            UnityEngine.Assertions.Assert.IsNotNull(missilePrefab);
             UnityEngine.Assertions.Assert.IsNotNull(missileImg);
         }
 
         private void Update() {
-            if(timeBeforeSpawning > 0.0f) {
-                timeBeforeSpawning -= Time.deltaTime;
+            if(timeBeforeShowing > 0.0f) {
+                timeBeforeShowing -= Time.deltaTime;
             } else if(!missileImg.enabled) {
                 missileImg.enabled = true;
             }
@@ -42,7 +46,10 @@ namespace InterfaceA2 {
 
         public void OnButtonClick() {
             missileImg.enabled = false;
-            timeBeforeSpawning = maxTimeBeforeSpawning;
+            timeBeforeShowing = maxTimeBeforeShowing;
+
+            GameObject missile = Instantiate(missilePrefab, missileStartPos, Quaternion.identity);
+            missile.transform.SetParent(gameObject.transform.parent, false);
         }
     }
 }
