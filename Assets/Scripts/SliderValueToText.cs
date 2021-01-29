@@ -5,16 +5,12 @@ using TMPro;
 
 public class SliderValueToText : MonoBehaviour
 {
-    public Text percentageText;
+    static int intValue = 0;
 
     void Start()
     {
-        percentageText = GetComponent<Text>();
+        intValue = 100000;
     }
 
-    public void textUpdate(float value)
-    {
-        percentageText.text = Mathf.RoundToInt(value * 100) + "%";
-    }
 
 }

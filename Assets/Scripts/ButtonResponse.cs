@@ -11,43 +11,40 @@ public class ButtonResponse : MonoBehaviour
     public int selectedCharacter = 0;
     private Button yourButton;
     private bool isCanvasActive;
+    private bool isCarOneActive, isCarTwoActive;
 
     void Start()
     {
-        GameObjectList[0].SetActive(false);
-        GameObjectList[1].SetActive(false);
+
     }
 
-    public void SetActiveCar(string buttonName)
+    void Update()
     {
-        Debug.Log(buttonName);
-        if(buttonName == "CarOne")
+        if (isCarOneActive)
         {
             GameObjectList[0].SetActive(true);
             GameObjectList[1].SetActive(false);
         }
-        else
+        else if(isCarTwoActive)
         {
             GameObjectList[0].SetActive(false);
             GameObjectList[1].SetActive(true);
         }
     }
-
-    public void Testing1234(string buttonName)
+    public void SetActiveCar(string buttonName)
     {
         Debug.Log(buttonName);
-        if(isCanvasActive)
+        if (buttonName == "CarOne")
         {
-            if (buttonName == "CarOne")
-            {
-                GameObjectList[0].SetActive(true);
-                GameObjectList[1].SetActive(false);
-            }
-            else
-            {
-                GameObjectList[0].SetActive(false);
-                GameObjectList[1].SetActive(true);
-            }
+            isCarOneActive = true;
+            isCarTwoActive = false;
+
+        }
+        else
+        {
+            isCarOneActive = false;
+            isCarTwoActive = true;
+
         }
     }
 
