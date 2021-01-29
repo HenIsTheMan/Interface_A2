@@ -5,16 +5,25 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/SplashScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/GameScene.unity
     guid: 295a2cd1687ae1c4fb76162a3e4e74e8
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/LoadingScene.unity
     guid: 5fb9971e72f52f54fa0c394a4cbf2f5c
   - enabled: 1
     path: Assets/Scenes/EndScene.unity
     guid: b8ee087c9a3dc694c9372b0e38969dae
+  - enabled: 1
+    path: Assets/Scenes/GarageScene.unity
+    guid: 2bd0ad673755ce241bcbd85ea1ca6de4
+  - enabled: 1
+    path: Assets/Scenes/LevelSelection.unity
+    guid: 8d2bcf5cb7137a441b92b6afdce96df0
+  - enabled: 1
+    path: Assets/Scenes/MainMenuScene.unity
+    guid: 9853a54bbead5994f8ba00322d2803c3
   m_configObjects: {}
