@@ -188,12 +188,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SceneCam
       objectReference: {fileID: 0}
-    - target: {fileID: 1969425252835834800, guid: d8fd95bffcf53b245be8a0cf2da1fdd5,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: abe46c6992ba8f84982595daca9bf57f,
-        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8fd95bffcf53b245be8a0cf2da1fdd5, type: 3}
 --- !u!4 &209374396 stripped
