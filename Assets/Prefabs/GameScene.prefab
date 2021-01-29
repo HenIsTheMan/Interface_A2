@@ -531,7 +531,6 @@ GameObject:
   - component: {fileID: 8877226197157521143}
   - component: {fileID: 1496364558}
   - component: {fileID: 712033031}
-  - component: {fileID: 712033026}
   m_Layer: 5
   m_Name: Pedal
   m_TagString: Untagged
@@ -657,6 +656,7 @@ MonoBehaviour:
   spdBar: {fileID: 2946305819699874763}
   spdBarPartPrefab: {fileID: 2088147629812374337, guid: 5fa0beb608d45114a8045feccefad3fd,
     type: 3}
+  audioSrcComponent: {fileID: 712033031}
 --- !u!114 &1496364558
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -685,34 +685,12 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 712033026}
-          m_MethodName: PlayAudio
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
   - eventID: 3
     callback:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 8877226197157521143}
           m_MethodName: OnPointerUp
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 712033026}
-          m_MethodName: StopAudio
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -818,19 +796,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &712033026
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2264952198065750631}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb4f467520a38c34ea97b8c13c67c61a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  audioSrcComponent: {fileID: 712033031}
 --- !u!1 &2414018059702836252
 GameObject:
   m_ObjectHideFlags: 0

@@ -17,6 +17,8 @@ namespace InterfaceA2 {
         private GameObject[] spdBarParts;
         const int amtOfParts = 31;
 
+        [SerializeField] private AudioSource audioSrcComponent;
+
         #endregion
 
         #region Properties
@@ -34,6 +36,8 @@ namespace InterfaceA2 {
             spdBar = null;
             spdBarPartPrefab = null;
             spdBarParts = null;
+
+            audioSrcComponent = null;
         }
 
         #endregion
@@ -44,6 +48,8 @@ namespace InterfaceA2 {
             UnityEngine.Assertions.Assert.IsNotNull(spdBar);
             UnityEngine.Assertions.Assert.IsNotNull(spdBarPartPrefab);
             UnityEngine.Assertions.Assert.IsNotNull(spdTmpComponent);
+
+            UnityEngine.Assertions.Assert.IsNotNull(audioSrcComponent);
         }
 
         private void Start() {
@@ -74,10 +80,12 @@ namespace InterfaceA2 {
 
         public void OnPointerDown() {
             isHeldDown = true;
+            audioSrcComponent.Play();
         }
 
         public void OnPointerUp() {
             isHeldDown = false;
+            audioSrcComponent.Play();
         }
 
         private void FixedUpdate() {
@@ -90,6 +98,11 @@ namespace InterfaceA2 {
             for(int i = 0; i < amtOfParts; ++i) {
                 GameObject myGO = spdBarParts[i];
                 myGO.SetActive(vel > velPiece * (i + 1) || Mathf.Approximately(vel , velPiece * (i + 1)));
+            }
+
+            audioSrcComponent.pitch = 1.0f + vel / maxVel * 0.4f;
+            if(Mathf.Approximately(vel, 0.0f)) {
+                audioSrcComponent.Stop();
             }
         }
 
