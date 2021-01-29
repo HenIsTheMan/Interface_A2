@@ -21,13 +21,6 @@ namespace InterfaceA2 {
         #endregion
 
         #region Unity User Callback Event Funcs
-
-        private void Update() {
-            if(Input.GetMouseButtonDown(0)) {
-                ChangeScene();
-            }
-        }
-
         #endregion
 
         public void ChangeScene() {
