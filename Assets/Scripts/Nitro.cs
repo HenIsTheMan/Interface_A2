@@ -15,12 +15,12 @@ namespace InterfaceA2 {
 
         #region Properties
 
-        public float NitroAmt {
+        public bool IsUsingNitro {
             get {
-                return nitroAmt;
+                return isUsingNitro;
             }
             set {
-                nitroAmt = value;
+                isUsingNitro = value;
             }
         }
 
@@ -45,6 +45,9 @@ namespace InterfaceA2 {
             nitroAmt += (isUsingNitro ? nitroDecreaseFactor : nitroIncreaseFactor) * Time.deltaTime;
             if(nitroAmt > maxNitroAmt) {
                 nitroAmt = maxNitroAmt;
+            } else if(nitroAmt <= 0.0f) {
+                nitroAmt = 0.0f;
+                isUsingNitro = false;
             }
 
             float ratio = nitroAmt / maxNitroAmt;
