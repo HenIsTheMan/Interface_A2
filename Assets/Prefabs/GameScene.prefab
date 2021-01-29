@@ -496,8 +496,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxVel: 169
-  accel: 40
-  decel: 30
+  heldDownAccel: 4
+  notHeldDownAccel: 3
   spdTmpComponent: {fileID: 3290713894327293167}
 --- !u!1 &2648328397448953125
 GameObject:

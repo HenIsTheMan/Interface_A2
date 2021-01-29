@@ -8,8 +8,8 @@ namespace InterfaceA2 {
         private bool isHeldDown;
         private float vel;
         [SerializeField] private float maxVel;
-        [SerializeField] private float accel;
-        [SerializeField] private float decel;
+        [SerializeField] private float heldDownAccel;
+        [SerializeField] private float notHeldDownAccel;
         [SerializeField] private TextMeshProUGUI spdTmpComponent;
 
         #endregion
@@ -23,8 +23,8 @@ namespace InterfaceA2 {
             isHeldDown = false;
             vel = 0.0f;
             maxVel = 0.0f;
-            accel = 0.0f;
-            decel = 0.0f;
+            heldDownAccel = 0.0f;
+            notHeldDownAccel = 0.0f;
             spdTmpComponent = null;
         }
 
@@ -41,7 +41,7 @@ namespace InterfaceA2 {
         }
 
         private void FixedUpdate() {
-            vel += (isHeldDown ? accel : decel) * Time.deltaTime;
+            vel += (isHeldDown ? heldDownAccel : notHeldDownAccel) * Time.deltaTime;
             vel = Mathf.Clamp(vel, 0.0f, maxVel);
 
             spdTmpComponent.text = (int)vel + " km/h"; //check lang??
