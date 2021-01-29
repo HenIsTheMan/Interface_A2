@@ -72,8 +72,12 @@ namespace InterfaceA2 {
             }
         }
 
-        private void Update() {
-            isHeldDown = true; //Pedal is being held down??
+        public void OnPointerDown() {
+            isHeldDown = true;
+        }
+
+        public void OnPointerUp() {
+            isHeldDown = false;
         }
 
         private void FixedUpdate() {
