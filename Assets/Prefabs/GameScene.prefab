@@ -496,8 +496,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxVel: 169
-  heldDownAccel: 4
-  notHeldDownAccel: 3
+  heldDownAccel: 20
+  notHeldDownAccel: 15
   spdTmpComponent: {fileID: 3290713894327293167}
   spdBar: {fileID: 2946305819699874763}
   spdBarPartPrefab: {fileID: 2088147629812374337, guid: 5fa0beb608d45114a8045feccefad3fd,
