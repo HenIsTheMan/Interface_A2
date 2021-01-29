@@ -45,11 +45,13 @@ namespace InterfaceA2 {
         #endregion
 
         public void OnButtonClick() {
-            missileImg.enabled = false;
-            timeBeforeShowing = maxTimeBeforeShowing;
+            if(missileImg.enabled) {
+                missileImg.enabled = false;
+                timeBeforeShowing = maxTimeBeforeShowing;
 
-            GameObject missile = Instantiate(missilePrefab, missileStartPos, Quaternion.identity);
-            missile.transform.SetParent(gameObject.transform.parent, false);
+                GameObject missile = Instantiate(missilePrefab, missileStartPos, Quaternion.identity);
+                missile.transform.SetParent(gameObject.transform.parent, false);
+            }
         }
     }
 }

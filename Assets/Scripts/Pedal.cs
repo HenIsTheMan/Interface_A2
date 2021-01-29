@@ -106,7 +106,7 @@ namespace InterfaceA2 {
             vel += (isHeldDown ? heldDownAccel : notHeldDownAccel) * Time.deltaTime;
             vel = Mathf.Clamp(vel, 0.0f, maxVel);
 
-            spdTmpComponent.text = (int)vel + " km/h"; //check lang??
+            spdTmpComponent.text = (int)vel + " km/h";
 
             float velPiece = maxVel / amtOfParts;
             for(int i = 0; i < amtOfParts; ++i) {
