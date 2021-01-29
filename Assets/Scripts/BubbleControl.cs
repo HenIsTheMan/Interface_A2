@@ -1,15 +1,15 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
+using Random = UnityEngine.Random;
+
 namespace InterfaceA2 {
     internal sealed class BubbleControl: MonoBehaviour {
         #region Fields
 
-        private float BT;
-        private float elapsedTime;
-        [SerializeField] private float delay;
+        private float timeBeforeSpawning;
+        [SerializeField] private float maxTimeBeforeSpawning;
         [SerializeField] private Image missileImg;
-        [SerializeField] private Image refMissileImg;
 
         #endregion
 
@@ -19,11 +19,9 @@ namespace InterfaceA2 {
         #region Ctors and Dtor
 
         public BubbleControl() {
-            BT = 0.0f;
-            elapsedTime = 0.0f;
-            delay = 0.0f;
+            timeBeforeSpawning = 0.0f;
+            maxTimeBeforeSpawning = 0.0f;
             missileImg = null;
-            refMissileImg = null;
         }
 
         #endregion
@@ -35,18 +33,18 @@ namespace InterfaceA2 {
         }
 
         private void Update() {
-            elapsedTime += Time.deltaTime;
-
-            if((refMissileImg == null || (refMissileImg != null && refMissileImg.enabled))
-                && !missileImg.enabled
-                && BT <= elapsedTime
-                && Random.Range(1, 101) >= 99
-            ) {
+            if(timeBeforeSpawning > 0.0f) {
+                timeBeforeSpawning -= Time.deltaTime;
+            } else if(!missileImg.enabled) {
                 missileImg.enabled = true;
-                BT = elapsedTime + delay;
             }
         }
 
         #endregion
+
+        public void OnButtonClick() {
+            missileImg.enabled = false;
+            timeBeforeSpawning = maxTimeBeforeSpawning;
+        }
     }
 }

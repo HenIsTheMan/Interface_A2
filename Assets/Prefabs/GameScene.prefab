@@ -59,7 +59,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1309,7 +1309,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 957258880804536554}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3948858773335532360}
+        m_MethodName: OnButtonClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &3948858773335532360
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1322,9 +1333,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b498dca0f1fd1654998e4858fa1fa37c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delay: 0.5
+  maxTimeBeforeSpawning: 4
   missileImg: {fileID: 174553998}
-  refMissileImg: {fileID: 0}
 --- !u!1 &7429742391274355265
 GameObject:
   m_ObjectHideFlags: 0
