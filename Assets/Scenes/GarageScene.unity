@@ -7010,7 +7010,7 @@ PrefabInstance:
     - target: {fileID: 2391972652906891009, guid: e47ffd891ba17d34bb154430302ec770,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -30.000061
+      value: -30.000122
       objectReference: {fileID: 0}
     - target: {fileID: 2391972652906891009, guid: e47ffd891ba17d34bb154430302ec770,
         type: 3}
@@ -9438,10 +9438,40 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 954926317240271899, guid: cbbf220cbbb4ecf48b45e7b0ef0d4d7c,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 954926317816807042, guid: cbbf220cbbb4ecf48b45e7b0ef0d4d7c,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 954926318446015101, guid: cbbf220cbbb4ecf48b45e7b0ef0d4d7c,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3076756150207979626, guid: cbbf220cbbb4ecf48b45e7b0ef0d4d7c,
         type: 3}
       propertyPath: m_Name
       value: GarageScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 7830805257991001883, guid: cbbf220cbbb4ecf48b45e7b0ef0d4d7c,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7830805258433703298, guid: cbbf220cbbb4ecf48b45e7b0ef0d4d7c,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7830805259643624420, guid: cbbf220cbbb4ecf48b45e7b0ef0d4d7c,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cbbf220cbbb4ecf48b45e7b0ef0d4d7c, type: 3}
@@ -14320,6 +14350,11 @@ PrefabInstance:
     - target: {fileID: 1969425252358867170, guid: d8fd95bffcf53b245be8a0cf2da1fdd5,
         type: 3}
       propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1969425252358867175, guid: d8fd95bffcf53b245be8a0cf2da1fdd5,
+        type: 3}
+      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1969425252835834800, guid: d8fd95bffcf53b245be8a0cf2da1fdd5,

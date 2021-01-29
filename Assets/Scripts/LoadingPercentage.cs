@@ -14,6 +14,7 @@ namespace InterfaceA2 {
         [SerializeField] private int chanceForShortDelay;
         private int percentage;
         private TextMeshProUGUI tmpComponent;
+        [SerializeField] private SceneTransition sceneTransitionScript;
 
         #endregion
 
@@ -39,6 +40,7 @@ namespace InterfaceA2 {
             chanceForShortDelay = 0;
             percentage = 0;
             tmpComponent = null;
+            sceneTransitionScript = null;
         }
 
         #endregion
@@ -47,6 +49,8 @@ namespace InterfaceA2 {
 
         private void Awake() {
             tmpComponent = gameObject.GetComponent<TextMeshProUGUI>();
+
+            UnityEngine.Assertions.Assert.IsNotNull(sceneTransitionScript);
         }
 
         private void Update() {
@@ -59,7 +63,7 @@ namespace InterfaceA2 {
                 }
 
                 if(percentage == 100) {
-                    //??
+                    sceneTransitionScript.ChangeScene();
                     return;
                 }
             }
