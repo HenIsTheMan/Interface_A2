@@ -8,6 +8,7 @@ namespace InterfaceA2 {
 
         private float elapsedTimeInMilliseconds;
         private TextMeshProUGUI tmpComponent;
+        [SerializeField] private SceneTransition sceneTransitionScript;
 
         #endregion
 
@@ -19,6 +20,7 @@ namespace InterfaceA2 {
         public RaceElapsedTime() {
             elapsedTimeInMilliseconds = 0.0f;
             tmpComponent = null;
+            sceneTransitionScript = null;
         }
 
         #endregion
@@ -27,6 +29,7 @@ namespace InterfaceA2 {
 
         private void Awake() {
             tmpComponent = gameObject.GetComponent<TextMeshProUGUI>();
+            UnityEngine.Assertions.Assert.IsNotNull(sceneTransitionScript);
         }
 
         private void Update() {
@@ -37,6 +40,10 @@ namespace InterfaceA2 {
                 t.Seconds,
                 t.Milliseconds
             );
+
+            if(t.Minutes == 1) {
+                sceneTransitionScript.ChangeScene();
+            }
         }
 
         #endregion
