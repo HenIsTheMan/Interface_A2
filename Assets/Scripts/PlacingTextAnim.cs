@@ -69,9 +69,7 @@ namespace InterfaceA2 {
                 float lerpFactor = EaseInExpo(timeAlive);
                 Vector3 localPos = ((RectTransform)gameObject.transform).localPosition;
                 ((RectTransform)gameObject.transform).localPosition = new Vector3((1.0f - lerpFactor) * StartPosX + lerpFactor * EndPosX, localPos.y, localPos.z);
-            }
-            
-            if(ShldSetAsLocalPlayer) {
+            } else if(ShldSetAsLocalPlayer) {
                 gameObject.GetComponent<TextMeshProUGUI>().font = localPlayerFont;
                 MyGrayBar.GetComponent<Image>().color = new Color(0.27f, 0.27f, 0.27f);
                 ShldSetAsLocalPlayer = false;
