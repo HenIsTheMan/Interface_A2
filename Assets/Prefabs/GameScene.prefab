@@ -376,6 +376,7 @@ GameObject:
   - component: {fileID: 2928413371550474043}
   - component: {fileID: 2234200695067509789}
   - component: {fileID: 6122776057100798209}
+  - component: {fileID: 8877226197157521143}
   m_Layer: 5
   m_Name: Pedal
   m_TagString: Untagged
@@ -482,6 +483,22 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &8877226197157521143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2264952198065750631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fac48d125db7e44b99d943472e8119b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxVel: 169
+  accel: 40
+  decel: 30
+  spdTmpComponent: {fileID: 3290713894327293167}
 --- !u!1 &2648328397448953125
 GameObject:
   m_ObjectHideFlags: 0
@@ -1523,10 +1540,22 @@ PrefabInstance:
     - target: {fileID: 736112560081052952, guid: 18ee121d6d06fe247aa198df64bff466,
         type: 3}
       propertyPath: m_text
-      value: 169 km/h
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18ee121d6d06fe247aa198df64bff466, type: 3}
+--- !u!114 &3290713894327293167 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 736112560081052952, guid: 18ee121d6d06fe247aa198df64bff466,
+    type: 3}
+  m_PrefabInstance: {fileID: 2854653944029229559}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &3607882241860690289
 PrefabInstance:
   m_ObjectHideFlags: 0
