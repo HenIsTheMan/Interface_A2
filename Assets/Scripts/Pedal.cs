@@ -11,6 +11,9 @@ namespace InterfaceA2 {
         [SerializeField] private float heldDownAccel;
         [SerializeField] private float notHeldDownAccel;
         [SerializeField] private TextMeshProUGUI spdTmpComponent;
+        [SerializeField] private GameObject spdBar;
+        [SerializeField] private GameObject spdBarPartPrefab;
+        private GameObject[] spdBarParts;
 
         #endregion
 
@@ -26,6 +29,9 @@ namespace InterfaceA2 {
             heldDownAccel = 0.0f;
             notHeldDownAccel = 0.0f;
             spdTmpComponent = null;
+            spdBar = null;
+            spdBarPartPrefab = null;
+            spdBarParts = null;
         }
 
         #endregion
@@ -33,7 +39,21 @@ namespace InterfaceA2 {
         #region Unity User Callback Event Funcs
 
         private void Awake() {
+            UnityEngine.Assertions.Assert.IsNotNull(spdBar);
+            UnityEngine.Assertions.Assert.IsNotNull(spdBarPartPrefab);
             UnityEngine.Assertions.Assert.IsNotNull(spdTmpComponent);
+        }
+
+        private void Start() {
+            int amtOfParts = 31;
+            spdBarParts = new GameObject[amtOfParts];
+
+            for(int i = 0; i < amtOfParts; ++i) {
+                GameObject myGO = spdBarParts[i];
+                myGO = Instantiate(spdBarPartPrefab, new Vector3(-150.0f + i * 10.0f, 215.0f, 0.0f), Quaternion.identity);
+                myGO.transform.SetParent(spdBar.transform, false);
+                myGO.name = "SpdBarPart" + i;
+            }
         }
 
         private void Update() {

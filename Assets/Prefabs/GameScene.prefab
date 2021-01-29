@@ -499,6 +499,9 @@ MonoBehaviour:
   heldDownAccel: 4
   notHeldDownAccel: 3
   spdTmpComponent: {fileID: 3290713894327293167}
+  spdBar: {fileID: 2946305819699874763}
+  spdBarPartPrefab: {fileID: 2088147629812374337, guid: 5fa0beb608d45114a8045feccefad3fd,
+    type: 3}
 --- !u!1 &2648328397448953125
 GameObject:
   m_ObjectHideFlags: 0
@@ -531,6 +534,41 @@ Transform:
   m_Father: {fileID: 1691258016961970373}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2946305819699874763
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5220605106243367924}
+  m_Layer: 5
+  m_Name: SpdBar
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &5220605106243367924
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2946305819699874763}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1691258016961970373}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &6733528789553606746
 GameObject:
   m_ObjectHideFlags: 0
@@ -1403,15 +1441,15 @@ PrefabInstance:
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8fd95bffcf53b245be8a0cf2da1fdd5, type: 3}
---- !u!224 &1691258016961970373 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 1969425253086979059, guid: d8fd95bffcf53b245be8a0cf2da1fdd5,
-    type: 3}
-  m_PrefabInstance: {fileID: 877150664858411830}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1691258017354017748 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1969425252358867170, guid: d8fd95bffcf53b245be8a0cf2da1fdd5,
+    type: 3}
+  m_PrefabInstance: {fileID: 877150664858411830}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &1691258016961970373 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 1969425253086979059, guid: d8fd95bffcf53b245be8a0cf2da1fdd5,
     type: 3}
   m_PrefabInstance: {fileID: 877150664858411830}
   m_PrefabAsset: {fileID: 0}
