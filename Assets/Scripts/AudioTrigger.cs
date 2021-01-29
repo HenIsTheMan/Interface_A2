@@ -4,7 +4,7 @@ namespace InterfaceA2 {
     internal sealed class AudioTrigger: MonoBehaviour {
         #region Fields
 
-        [SerializeField] private AudioSource audioSourceComponent;
+        [SerializeField] private AudioSource audioSrcComponent;
 
         #endregion
 
@@ -14,7 +14,7 @@ namespace InterfaceA2 {
         #region Ctors and Dtor
 
         public AudioTrigger() {
-            audioSourceComponent = null;
+            audioSrcComponent = null;
         }
 
         #endregion
@@ -22,17 +22,17 @@ namespace InterfaceA2 {
         #region Unity User Callback Event Funcs
 
         private void Awake() {
-            UnityEngine.Assertions.Assert.IsNotNull(audioSourceComponent);
+            UnityEngine.Assertions.Assert.IsNotNull(audioSrcComponent);
         }
 
         #endregion
 
         public void PlayAudio() {
-            audioSourceComponent.Play();
+            audioSrcComponent.Play();
         }
 
         public void StopAudio() {
-            audioSourceComponent.Stop();
+            audioSrcComponent.Stop();
         }
     }
 }
