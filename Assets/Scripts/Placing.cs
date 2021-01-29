@@ -58,6 +58,7 @@ namespace InterfaceA2 {
                 placingTextGO.GetComponent<TextMeshProUGUI>().text = texts[i];
 
                 PlacingTextAnim myAnim = placingTextGO.GetComponent<PlacingTextAnim>();
+                myAnim.ShldSetAsLocalPlayer = i == arrLen - 2;
                 myAnim.AnimDuration = 1.0f;
                 myAnim.StartPosX = startPos.x;
                 myAnim.EndPosX = endPos.x;
