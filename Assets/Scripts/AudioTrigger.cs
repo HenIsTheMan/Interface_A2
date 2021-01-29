@@ -30,5 +30,9 @@ namespace InterfaceA2 {
         public void PlayAudio() {
             audioSourceComponent.Play();
         }
+
+        public void StopAudio() {
+            audioSourceComponent.Stop();
+        }
     }
 }
