@@ -1,8 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-using Random = UnityEngine.Random;
-
 namespace InterfaceA2 {
     internal sealed class BubbleControl: MonoBehaviour {
         #region Fields
