@@ -7,6 +7,7 @@ namespace InterfaceA2 {
         const float resetTime = 0.2f;
         private float currTime = 0.0f;
         private int clickCount;
+        [SerializeField] private GameObject car;
         [SerializeField] private Nitro nitroScript;
 
         #endregion
@@ -18,6 +19,7 @@ namespace InterfaceA2 {
 
         public GameBG() {
             clickCount = 0;
+            car = null;
             nitroScript = null;
         }
 
@@ -26,6 +28,7 @@ namespace InterfaceA2 {
         #region Unity User Callback Event Funcs
 
         private void Awake() {
+            UnityEngine.Assertions.Assert.IsNotNull(car);
             UnityEngine.Assertions.Assert.IsNotNull(nitroScript);
         }
 
@@ -48,6 +51,16 @@ namespace InterfaceA2 {
 
         public void OnButtonClick() {
             ++clickCount;
+
+            if(Input.mousePosition.x > Screen.width * 0.5f) {
+                ((RectTransform)car.transform).localRotation = Quaternion.Euler(0.0f, 0.0f, 40.0f);
+            } else {
+                ((RectTransform)car.transform).localRotation = Quaternion.Euler(0.0f, 0.0f, -40.0f);
+            }
+        }
+
+        public void OnButtonRelease() {
+            ((RectTransform)car.transform).localRotation = Quaternion.Euler(0.0f, 0.0f, 0.0f);
         }
     }
 }
