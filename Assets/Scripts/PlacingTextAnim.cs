@@ -1,10 +1,12 @@
 ﻿using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace InterfaceA2 {
     internal sealed class PlacingTextAnim: MonoBehaviour {
         #region Fields
 
+        private bool shldAnimate;
         private float timeAlive;
         [SerializeField] private TMP_FontAsset localPlayerFont;
 
@@ -32,11 +34,17 @@ namespace InterfaceA2 {
             set;
         }
 
+        public GameObject MyGrayBar {
+            get;
+            set;
+        }
+
         #endregion
 
         #region Ctors and Dtor
 
         public PlacingTextAnim() {
+            shldAnimate = true;
             timeAlive = 0.0f;
             localPlayerFont = null;
         }
@@ -52,12 +60,21 @@ namespace InterfaceA2 {
         private void Update() {
             timeAlive += Time.deltaTime;
 
-            if(timeAlive <= AnimDuration) {
+            if(shldAnimate) {
+                if(timeAlive > AnimDuration) {
+                    timeAlive = AnimDuration;
+                    shldAnimate = false;
+                }
+
                 float lerpFactor = EaseInExpo(timeAlive);
                 Vector3 localPos = ((RectTransform)gameObject.transform).localPosition;
                 ((RectTransform)gameObject.transform).localPosition = new Vector3((1.0f - lerpFactor) * StartPosX + lerpFactor * EndPosX, localPos.y, localPos.z);
-            } else if(ShldSetAsLocalPlayer) {
+            }
+            
+            if(ShldSetAsLocalPlayer) {
                 gameObject.GetComponent<TextMeshProUGUI>().font = localPlayerFont;
+                MyGrayBar.GetComponent<Image>().color = new Color(0.27f, 0.27f, 0.27f);
+                ShldSetAsLocalPlayer = false;
             }
         }
 

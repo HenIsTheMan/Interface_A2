@@ -62,6 +62,7 @@ namespace InterfaceA2 {
                 myAnim.AnimDuration = 1.0f;
                 myAnim.StartPosX = startPos.x;
                 myAnim.EndPosX = endPos.x;
+                myAnim.MyGrayBar = grayBars[i];
 
                 ++i;
                 BT = elapsedTime + delay;
